@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { useLocale } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useAuth } from '@/components/auth-context';
 import StatusBadge from '@/components/admin/status-badge';
@@ -9,6 +9,7 @@ import StatusBadge from '@/components/admin/status-badge';
 const STATUSES = ['', 'PENDING', 'PAID', 'SHIPPED', 'DELIVERED', 'CANCELLED'];
 
 export default function AdminOrdersPage() {
+  const t = useTranslations('admin');
   const locale = useLocale();
   const { user, loading: authLoading } = useAuth();
   const [orders, setOrders] = useState([]);
@@ -35,23 +36,21 @@ export default function AdminOrdersPage() {
   const totalPages = Math.ceil(total / 15);
 
   if (authLoading) return <div className="text-center py-24 text-zinc-400">Loading...</div>;
-  if (!user || user.role !== 'ADMIN') return <div className="text-center py-24 text-zinc-500">Access denied.</div>;
+  if (!user || user.role !== 'ADMIN') return <div className="text-center py-24"><p className="text-zinc-500">{t('access_denied')}</p></div>;
 
   return (
     <div>
-      <h1 className="text-2xl font-light text-ocean mb-6">Orders</h1>
-
+      <h1 className="text-2xl font-light text-ocean mb-6">{t('orders')}</h1>
       <div className="flex flex-wrap gap-2 mb-6">
-        <input type="text" placeholder="Search by order ID, customer..."
-          value={search}
+        <input type="text" placeholder={t('search_order')} value={search}
           onChange={e => { setSearch(e.target.value); fetchOrders(e.target.value, statusFilter, 1); }}
           className="flex-1 sm:flex-none sm:w-64 border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" />
         <div className="flex gap-1 flex-wrap">
           {STATUSES.map(s => (
             <button key={s} onClick={() => { setStatusFilter(s); fetchOrders(search, s, 1); }}
-              className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
-                statusFilter === s ? 'bg-ocean text-white' : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
-              }`}>{s || 'All'}</button>
+              className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${statusFilter === s ? 'bg-ocean text-white' : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'}`}>
+              {s || t('all')}
+            </button>
           ))}
         </div>
       </div>
@@ -59,7 +58,7 @@ export default function AdminOrdersPage() {
       {loading ? (
         <div className="space-y-3">{[1,2,3,4,5].map(i => <div key={i} className="h-16 bg-zinc-100 rounded animate-pulse" />)}</div>
       ) : orders.length === 0 ? (
-        <div className="text-center py-16 text-zinc-400">No orders found.</div>
+        <div className="text-center py-16 text-zinc-400">{t('no_orders')}</div>
       ) : (
         <div className="space-y-3">
           {orders.map(order => (
@@ -83,12 +82,12 @@ export default function AdminOrdersPage() {
 
       {totalPages > 1 && (
         <div className="flex justify-between items-center mt-6 text-sm text-zinc-500">
-          <span>Page {page} of {totalPages}</span>
+          <span>{t('page_of', { page, total: totalPages })}</span>
           <div className="flex gap-2">
             <button disabled={page <= 1} onClick={() => fetchOrders(search, statusFilter, page - 1)}
-              className="px-3 py-1 border border-zinc-300 rounded hover:bg-zinc-50 disabled:opacity-30">Prev</button>
+              className="px-3 py-1 border border-zinc-300 rounded hover:bg-zinc-50 disabled:opacity-30">{t('prev')}</button>
             <button disabled={page >= totalPages} onClick={() => fetchOrders(search, statusFilter, page + 1)}
-              className="px-3 py-1 border border-zinc-300 rounded hover:bg-zinc-50 disabled:opacity-30">Next</button>
+              className="px-3 py-1 border border-zinc-300 rounded hover:bg-zinc-50 disabled:opacity-30">{t('next')}</button>
           </div>
         </div>
       )}

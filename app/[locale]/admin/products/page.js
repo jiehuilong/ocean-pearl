@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { useLocale } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useAuth } from '@/components/auth-context';
 import DataTable from '@/components/admin/data-table';
@@ -9,6 +9,7 @@ import ConfirmDialog from '@/components/admin/confirm-dialog';
 import { useToast } from '@/components/admin/toast';
 
 export default function AdminProductsPage() {
+  const t = useTranslations('admin');
   const locale = useLocale();
   const { user, loading: authLoading } = useAuth();
   const toast = useToast();
@@ -37,7 +38,7 @@ export default function AdminProductsPage() {
     if (!deleteId) return;
     await fetch(`/api/admin/products/${deleteId}`, { method: 'DELETE' });
     setDeleteId(null);
-    toast('Product deleted');
+    toast(t('product_deleted'));
     fetchProducts(search, 1);
   };
 
@@ -53,50 +54,46 @@ export default function AdminProductsPage() {
         specs: JSON.parse(p.specs || '{}'),
       }),
     });
-    toast('Product duplicated');
+    toast(t('product_duplicated'));
     fetchProducts(search, 1);
   };
 
   const columns = [
-    { key: 'name', label: 'Name', render: (p) => {
+    { key: 'name', label: t('products'), render: (p) => {
       const n = JSON.parse(p.name);
       return <span className="font-medium text-ocean">{n.en || n.zh || '(unnamed)'}</span>;
     }},
-    { key: 'category', label: 'Category' },
-    { key: 'price', label: 'Price', render: (p) => <span className="text-gold font-medium">${p.price.toLocaleString()}</span> },
-    { key: 'stock', label: 'Stock' },
+    { key: 'category', label: t('category') },
+    { key: 'price', label: t('price'), render: (p) => <span className="text-gold font-medium">${p.price.toLocaleString()}</span> },
+    { key: 'stock', label: t('stock') },
     {
       key: 'actions', label: '',
       render: (p) => (
         <div className="flex gap-2">
-          <Link href={`/${locale}/admin/products/${p.id}`} className="text-gold hover:underline text-xs">Edit</Link>
-          <button onClick={() => handleDuplicate(p)} className="text-zinc-400 hover:text-zinc-600 text-xs">Copy</button>
-          <button onClick={() => setDeleteId(p.id)} className="text-red-500 hover:text-red-700 text-xs">Delete</button>
+          <Link href={`/${locale}/admin/products/${p.id}`} className="text-gold hover:underline text-xs">{t('edit_product')}</Link>
+          <button onClick={() => handleDuplicate(p)} className="text-zinc-400 hover:text-zinc-600 text-xs">{t('duplicate')}</button>
+          <button onClick={() => setDeleteId(p.id)} className="text-red-500 hover:text-red-700 text-xs">{t('delete')}</button>
         </div>
       ),
     },
   ];
 
   if (authLoading) return <div className="text-center py-24 text-zinc-400">Loading...</div>;
-  if (!user || user.role !== 'ADMIN') return <div className="text-center py-24 text-zinc-500">Access denied.</div>;
+  if (!user || user.role !== 'ADMIN') return <div className="text-center py-24"><p className="text-zinc-500">{t('access_denied')}</p></div>;
 
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-light text-ocean">Products</h1>
-        <Link href={`/${locale}/admin/products/new`} className="bg-ocean text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-ocean-light transition-colors">+ Add Product</Link>
+        <h1 className="text-2xl font-light text-ocean">{t('products')}</h1>
+        <Link href={`/${locale}/admin/products/new`} className="bg-ocean text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-ocean-light transition-colors">{t('add_product')}</Link>
       </div>
-
-      <input
-        type="text" placeholder="Search by name or slug..."
-        value={search}
+      <input type="text" placeholder={t('search_name_slug')} value={search}
         onChange={e => { setSearch(e.target.value); fetchProducts(e.target.value, 1); }}
-        className="w-full sm:w-72 border border-zinc-300 rounded-lg px-3 py-2 text-sm mb-4 focus:outline-none focus:border-gold"
-      />
-
-      <DataTable columns={columns} data={products} loading={loading} emptyText="No products found." total={total} page={page} limit={20} onSearch={(q, p) => fetchProducts(q || search, p)} />
-
-      <ConfirmDialog open={!!deleteId} title="Delete Product" message="Are you sure you want to delete this product? This cannot be undone." confirmText="Delete" danger onConfirm={handleDelete} onCancel={() => setDeleteId(null)} />
+        className="w-full sm:w-72 border border-zinc-300 rounded-lg px-3 py-2 text-sm mb-4 focus:outline-none focus:border-gold" />
+      <DataTable columns={columns} data={products} loading={loading} emptyText={t('no_products')} total={total} page={page} limit={20}
+        onSearch={(q, p) => fetchProducts(q || search, p)} searchPlaceholder={t('search')} />
+      <ConfirmDialog open={!!deleteId} title={t('delete_title')} message={t('confirm_delete')} confirmText={t('delete')} danger
+        onConfirm={handleDelete} onCancel={() => setDeleteId(null)} />
     </div>
   );
 }

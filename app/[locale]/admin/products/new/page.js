@@ -1,20 +1,25 @@
 'use client';
 
 import { useState } from 'react';
-import { useLocale } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from '@/i18n/navigation';
 import { useAuth } from '@/components/auth-context';
+import MultiLangField from '@/components/admin/multi-lang-field';
+import { useToast } from '@/components/admin/toast';
 
 export default function NewProductPage() {
+  const t = useTranslations('admin');
   const locale = useLocale();
   const router = useRouter();
   const { user, loading } = useAuth();
+  const toast = useToast();
+  const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
     slug: '', price: '', compareAt: '', category: 'akoya', stock: '99',
-    name_en: '', name_zh: '', name_ja: '', name_fr: '',
-    desc_en: '', desc_zh: '', desc_ja: '', desc_fr: '',
+    name: { en: '', zh: '', ja: '', fr: '' },
+    desc: { en: '', zh: '', ja: '', fr: '' },
+    images: '',
   });
-  const [saving, setSaving] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,69 +29,57 @@ export default function NewProductPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         slug: form.slug,
-        price: form.price,
-        compareAt: form.compareAt || null,
+        price: parseFloat(form.price),
+        compareAt: form.compareAt ? parseFloat(form.compareAt) : null,
         category: form.category,
-        stock: form.stock,
-        name: { en: form.name_en, zh: form.name_zh, ja: form.name_ja, fr: form.name_fr },
-        description: { en: form.desc_en, zh: form.desc_zh, ja: form.desc_ja, fr: form.desc_fr },
+        stock: parseInt(form.stock),
+        name: form.name,
+        description: form.desc,
         specs: {},
-        images: [],
+        images: form.images ? form.images.split(',').map(s => s.trim()).filter(Boolean) : [],
       }),
     });
-    if (res.ok) router.push(`/${locale}/admin/products`);
+    if (res.ok) {
+      toast(t('product_created'));
+      router.push(`/${locale}/admin/products`);
+    }
     setSaving(false);
   };
 
   if (loading) return <div className="text-center py-24 text-zinc-400">Loading...</div>;
-  if (!user || user.role !== 'ADMIN') return <div className="text-center py-24 text-zinc-500">Access denied.</div>;
-
-  const Field = ({ label, value, field, type = 'text', required }) => (
-    <div>
-      <label className="block text-sm font-medium text-zinc-700 mb-1">{label}</label>
-      {type === 'textarea' ? (
-        <textarea value={form[field]} onChange={e => setForm(f => ({...f, [field]: e.target.value}))} rows={2} required={required}
-          className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold resize-none" />
-      ) : (
-        <input type={type} value={form[field]} onChange={e => setForm(f => ({...f, [field]: e.target.value}))} required={required}
-          className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" />
-      )}
-    </div>
-  );
+  if (!user || user.role !== 'ADMIN') return <div className="text-center py-24"><p className="text-zinc-500">{t('access_denied')}</p></div>;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-light text-ocean mb-8">Add Product</h1>
+    <div className="max-w-3xl">
+      <h1 className="text-2xl font-light text-ocean mb-6">{t('add_product')}</h1>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-2 gap-4">
-          <Field label="Slug" field="slug" required />
-          <Field label="Category" field="category" />
-          <Field label="Price (USD)" field="price" type="number" required />
-          <Field label="Compare At" field="compareAt" type="number" />
-          <Field label="Stock" field="stock" type="number" />
+          <div><label className="block text-sm font-medium text-zinc-700 mb-1">{t('slug')}</label>
+            <input type="text" required value={form.slug} onChange={e => setForm(f => ({...f, slug: e.target.value}))}
+              className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" /></div>
+          <div><label className="block text-sm font-medium text-zinc-700 mb-1">{t('category')}</label>
+            <select value={form.category} onChange={e => setForm(f => ({...f, category: e.target.value}))}
+              className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold">
+              <option value="akoya">Akoya</option><option value="freshwater">Freshwater</option><option value="southsea">South Sea</option>
+            </select></div>
+          <div><label className="block text-sm font-medium text-zinc-700 mb-1">{t('price')}</label>
+            <input type="number" required value={form.price} onChange={e => setForm(f => ({...f, price: e.target.value}))}
+              className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" /></div>
+          <div><label className="block text-sm font-medium text-zinc-700 mb-1">{t('compare_at')}</label>
+            <input type="number" value={form.compareAt} onChange={e => setForm(f => ({...f, compareAt: e.target.value}))}
+              className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" /></div>
+          <div><label className="block text-sm font-medium text-zinc-700 mb-1">{t('stock')}</label>
+            <input type="number" value={form.stock} onChange={e => setForm(f => ({...f, stock: e.target.value}))}
+              className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" /></div>
         </div>
-        <div className="border-t border-zinc-200 pt-4">
-          <h3 className="font-medium text-ocean mb-3">Name (per language)</h3>
-          <div className="grid grid-cols-2 gap-4">
-            <Field label="English *" field="name_en" required />
-            <Field label="中文" field="name_zh" />
-            <Field label="日本語" field="name_ja" />
-            <Field label="Français" field="name_fr" />
-          </div>
-        </div>
-        <div className="border-t border-zinc-200 pt-4">
-          <h3 className="font-medium text-ocean mb-3">Description</h3>
-          <div className="space-y-3">
-            <Field label="English *" field="desc_en" type="textarea" required />
-            <Field label="中文" field="desc_zh" type="textarea" />
-            <Field label="日本語" field="desc_ja" type="textarea" />
-            <Field label="Français" field="desc_fr" type="textarea" />
-          </div>
-        </div>
+        <MultiLangField label="Name" values={form.name} onChange={v => setForm(f => ({...f, name: v}))} />
+        <MultiLangField label="Description" values={form.desc} onChange={v => setForm(f => ({...f, desc: v}))} type="textarea" rows={3} />
+        <div><label className="block text-sm font-medium text-zinc-700 mb-1">{t('image_urls')}</label>
+          <input type="text" value={form.images} onChange={e => setForm(f => ({...f, images: e.target.value}))}
+            className="w-full border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" /></div>
         <button type="submit" disabled={saving}
           className="bg-ocean text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-ocean-light transition-colors disabled:opacity-50">
-          {saving ? 'Saving...' : 'Create Product'}
-        </button>
+          {saving ? 'Saving...' : t('add_product')}</button>
       </form>
     </div>
   );
