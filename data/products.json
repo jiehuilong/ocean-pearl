@@ -1,0 +1,229 @@
+[
+  {
+    "id": "akoya-001",
+    "slug": "classic-akoya-necklace",
+    "category": "akoya",
+    "images": ["/images/akoya-necklace-1.jpg", "/images/akoya-necklace-2.jpg"],
+    "price": 899,
+    "compareAt": 1299,
+    "name": {
+      "en": "Classic Akoya Pearl Necklace",
+      "zh": "经典阿古屋珍珠项链",
+      "ja": "クラシック阿古屋真珠ネックレス",
+      "fr": "Collier de Perles Akoya Classique"
+    },
+    "description": {
+      "en": "A stunning 18-inch strand of 7-7.5mm Akoya pearls with brilliant luster and near-perfect roundness. Each pearl is individually hand-knotted on silk thread and finished with a 14K gold clasp.",
+      "zh": "让人惊艳的18英寸7-7.5mm阿古屋珍珠项链，光泽璀璨，近乎完美圆润。每颗珍珠均由丝线手工打结，配14K金扣。",
+      "ja": "輝く光沢とほぼ完璧な球形を持つ7-7.5mmの阿古屋真珠を使用した18インチの見事なネックレス。一粒一粒がシルク糸で手結びされ、14Kゴールドの留め具で仕上げられています。",
+      "fr": "Un superbe collier de 45 cm de perles Akoya de 7-7,5 mm au lustre brillant et à la rondeur presque parfaite. Chaque perle est nouée à la main sur un fil de soie et fermée par un fermoir en or 14K."
+    },
+    "specs": {
+      "en": { "Size": "7-7.5mm", "Length": "18 inches (45cm)", "Material": "14K Gold Clasp", "Type": "Akoya Pearl", "Origin": "Japan" },
+      "zh": { "尺寸": "7-7.5mm", "长度": "18英寸(45cm)", "材质": "14K金扣", "类型": "阿古屋珍珠", "产地": "日本" },
+      "ja": { "サイズ": "7-7.5mm", "長さ": "18インチ(45cm)", "素材": "14Kゴールド留め具", "種類": "阿古屋真珠", "産地": "日本" },
+      "fr": { "Taille": "7-7,5mm", "Longueur": "45 cm", "Matériau": "Fermoir or 14K", "Type": "Perle Akoya", "Origine": "Japon" }
+    }
+  },
+  {
+    "id": "akoya-002",
+    "slug": "akoya-studder-earrings",
+    "category": "akoya",
+    "images": ["/images/akoya-earrings-1.jpg", "/images/akoya-earrings-2.jpg"],
+    "price": 349,
+    "name": {
+      "en": "Akoya Pearl Stud Earrings",
+      "zh": "阿古屋珍珠耳钉",
+      "ja": "阿古屋真珠スタッドピアス",
+      "fr": "Boutons d'Oreilles Akoya"
+    },
+    "description": {
+      "en": "Elegant 6.5-7mm Akoya pearl studs set in 14K white gold. Each pearl exhibits exceptional luster and a beautiful pink-silver overtone.",
+      "zh": "优雅6.5-7mm阿古屋珍珠耳钉，14K白金镶嵌。每颗珍珠光泽出众，带有美丽的粉银色调。",
+      "ja": "6.5-7mmの阿古屋真珠を使用したエレガントなスタッドピアス。14Kホワイトゴールド製。每粒が卓越した光沢と美しいピンクシルバーのオーバートーンを示します。",
+      "fr": "Délicats boutons d'oreilles Akoya de 6,5-7mm montés sur or blanc 14K. Chaque perle présente un lustre exceptionnel et un magnifique reflet argent-rose."
+    },
+    "specs": {
+      "en": { "Size": "6.5-7mm", "Setting": "14K White Gold", "Type": "Akoya Pearl", "Origin": "Japan" },
+      "zh": { "尺寸": "6.5-7mm", "镶嵌": "14K白金", "类型": "阿古屋珍珠", "产地": "日本" },
+      "ja": { "サイズ": "6.5-7mm", "素材": "14Kホワイトゴールド", "種類": "阿古屋真珠", "産地": "日本" },
+      "fr": { "Taille": "6,5-7mm", "Monture": "Or blanc 14K", "Type": "Perle Akoya", "Origine": "Japon" }
+    }
+  },
+  {
+    "id": "akoya-003",
+    "slug": "akoya-bracelet",
+    "category": "akoya",
+    "images": ["/images/akoya-bracelet-1.jpg"],
+    "price": 549,
+    "name": {
+      "en": "Akoya Pearl Bracelet",
+      "zh": "阿古屋珍珠手链",
+      "ja": "阿古屋真珠ブレスレット",
+      "fr": "Bracelet de Perles Akoya"
+    },
+    "description": {
+      "en": "A graceful 7.5-inch bracelet featuring 6.5-7mm Akoya pearls with exquisite luster. Double-stranded silk cord with a delicate 14K gold closure.",
+      "zh": "优雅7.5英寸手链，采用6.5-7mm光泽出众的阿古屋珍珠。双股丝线串制，配精致14K金扣。",
+      "ja": "6.5-7mmの精巧な光沢を持つ阿古屋真珠を使用した優雅な7.5インチブレスレット。二重のシルクコードに14Kゴールドの繊細な留め具。",
+      "fr": "Un bracelet élégant de 19 cm avec des perles Akoya de 6,5-7mm au lustre exquis. Cordon de soie double brin avec une délicate fermeture en or 14K."
+    },
+    "specs": {
+      "en": { "Size": "6.5-7mm", "Length": "7.5 inches (19cm)", "Material": "14K Gold Clasp", "Type": "Akoya Pearl", "Origin": "Japan" },
+      "zh": { "尺寸": "6.5-7mm", "长度": "7.5英寸(19cm)", "材质": "14K金扣", "类型": "阿古屋珍珠", "产地": "日本" },
+      "ja": { "サイズ": "6.5-7mm", "長さ": "7.5インチ(19cm)", "素材": "14Kゴールド留め具", "種類": "阿古屋真珠", "産地": "日本" },
+      "fr": { "Taille": "6,5-7mm", "Longueur": "19 cm", "Matériau": "Fermoir or 14K", "Type": "Perle Akoya", "Origine": "Japon" }
+    }
+  },
+  {
+    "id": "fw-001",
+    "slug": "freshwater-baroque-necklace",
+    "category": "freshwater",
+    "images": ["/images/fw-necklace-1.jpg", "/images/fw-necklace-2.jpg"],
+    "price": 249,
+    "name": {
+      "en": "Baroque Freshwater Pearl Necklace",
+      "zh": "异形淡水珍珠项链",
+      "ja": "バロック淡水真珠ネックレス",
+      "fr": "Collier de Perles d'Eau Douce Baroques"
+    },
+    "description": {
+      "en": "A unique 16-inch necklace featuring 9-11mm baroque freshwater pearls in mixed pastel shades of white, cream, and pale pink. Each pearl's organic shape makes every piece truly one-of-a-kind.",
+      "zh": "独特的16英寸项链，采用9-11mm异形淡水珍珠，呈现白、奶油和淡粉色的柔和混合色调。每颗珍珠的天然形态使每件作品都独一无二。",
+      "ja": "9-11mmのバロック淡水真珠を使用したユニークな16インチネックレス。白、クリーム、薄ピンクのパステルカラーの混ざり合い。每粒の有機的な形状が一点ものを生み出します。",
+      "fr": "Un collier unique de 40 cm avec des perles d'eau douce baroques de 9-11mm dans des tons pastel mélangés de blanc, crème et rose pâle. La forme organique de chaque perle rend chaque pièce vraiment unique."
+    },
+    "specs": {
+      "en": { "Size": "9-11mm", "Length": "16 inches (40cm)", "Clasp": "Sterling Silver", "Type": "Freshwater Pearl", "Origin": "China" },
+      "zh": { "尺寸": "9-11mm", "长度": "16英寸(40cm)", "扣件": "纯银", "类型": "淡水珍珠", "产地": "中国" },
+      "ja": { "サイズ": "9-11mm", "長さ": "16インチ(40cm)", "留め具": "スターリングシルバー", "種類": "淡水真珠", "産地": "中国" },
+      "fr": { "Taille": "9-11mm", "Longueur": "40 cm", "Fermoir": "Argent Sterling", "Type": "Perle d'Eau Douce", "Origine": "Chine" }
+    }
+  },
+  {
+    "id": "fw-002",
+    "slug": "freshwater-pearl-strand",
+    "category": "freshwater",
+    "images": ["/images/fw-strand-1.jpg"],
+    "price": 179,
+    "name": {
+      "en": "Freshwater Pearl Strand Bracelet",
+      "zh": "淡水珍珠手串",
+      "ja": "淡水真珠ストランドブレスレット",
+      "fr": "Bracelet à Rang de Perles d'Eau Douce"
+    },
+    "description": {
+      "en": "A versatile 7-8mm freshwater pearl strand that can be worn as a bracelet or layered. Soft white luster with subtle pink overtones. Finished with a sterling silver clasp.",
+      "zh": "多用途7-8mm淡水珍珠手串，可单独佩戴或叠搭。柔和的白色光泽带有微妙的粉色调。纯银扣件。",
+      "ja": "7-8mmの淡水真珠を使用した多目的ストランド。ブレスレットとしても重ね付けとしても着用可能。柔らかな白い光沢と微妙なピンクの色調。スターリングシルバーの留め具。",
+      "fr": "Un rang de perles d'eau douce polyvalent de 7-8mm, à porter en bracelet ou superposé. Lustre blanc doux avec de subtils reflets roses. Fermoir en argent sterling."
+    },
+    "specs": {
+      "en": { "Size": "7-8mm", "Length": "8 inches (20cm)", "Clasp": "Sterling Silver", "Type": "Freshwater Pearl", "Origin": "China" },
+      "zh": { "尺寸": "7-8mm", "长度": "8英寸(20cm)", "扣件": "纯银", "类型": "淡水珍珠", "产地": "中国" },
+      "ja": { "サイズ": "7-8mm", "長さ": "8インチ(20cm)", "留め具": "スターリングシルバー", "種類": "淡水真珠", "産地": "中国" },
+      "fr": { "Taille": "7-8mm", "Longueur": "20 cm", "Fermoir": "Argent Sterling", "Type": "Perle d'Eau Douce", "Origine": "Chine" }
+    }
+  },
+  {
+    "id": "fw-003",
+    "slug": "freshwater-pearl-earrings",
+    "category": "freshwater",
+    "images": ["/images/fw-earrings-1.jpg", "/images/fw-earrings-2.jpg"],
+    "price": 129,
+    "name": {
+      "en": "Freshwater Pearl Drop Earrings",
+      "zh": "淡水珍珠吊坠耳环",
+      "ja": "淡水真珠ドロップピアス",
+      "fr": "Boucles d'Oreilles Tombantes d'Eau Douce"
+    },
+    "description": {
+      "en": "Charming 8-9mm near-round freshwater pearl drops in warm cream tones, suspended from sterling silver hooks. Lightweight and elegant for everyday wear.",
+      "zh": "迷人的8-9mm近圆淡水珍珠吊坠，温暖的奶油色调，纯银钩挂。轻巧优雅，适合日常佩戴。",
+      "ja": "温かみのあるクリーム色の8-9mmニアラウンド淡水真珠のドロップ。スターリングシルバーのフックから吊り下げられています。軽量でエレガント、日常使いに最適。",
+      "fr": "Charmantes perles d'eau douce tombantes de 8-9mm presque rondes aux tons crème chauds, suspendues à des crochets en argent sterling. Légères et élégantes pour un port quotidien."
+    },
+    "specs": {
+      "en": { "Size": "8-9mm", "Setting": "Sterling Silver Hooks", "Type": "Freshwater Pearl", "Origin": "China" },
+      "zh": { "尺寸": "8-9mm", "镶嵌": "纯银钩", "类型": "淡水珍珠", "产地": "中国" },
+      "ja": { "サイズ": "8-9mm", "素材": "スターリングシルバーフック", "種類": "淡水真珠", "産地": "中国" },
+      "fr": { "Taille": "8-9mm", "Monture": "Crochets argent sterling", "Type": "Perle d'Eau Douce", "Origine": "Chine" }
+    }
+  },
+  {
+    "id": "ss-001",
+    "slug": "south-sea-golden-necklace",
+    "category": "southsea",
+    "images": ["/images/ss-necklace-1.jpg", "/images/ss-necklace-2.jpg", "/images/ss-necklace-3.jpg"],
+    "price": 2499,
+    "compareAt": 3299,
+    "name": {
+      "en": "South Sea Golden Pearl Necklace",
+      "zh": "南洋金珠项链",
+      "ja": "南洋ゴールデンパールネックレス",
+      "fr": "Collier de Perles Dorées de Mer du Sud"
+    },
+    "description": {
+      "en": "An exquisite 18-inch necklace of 11-13mm golden South Sea pearls. Each pearl displays a rich, warm gold color with satin-like luster. Set with an 18K gold clasp adorned with a small diamond accent.",
+      "zh": "精致的18英寸11-13mm南洋金珠项链。每颗珍珠呈现浓郁温暖的金色，光泽如缎。配18K金扣，镶嵌小钻点缀。",
+      "ja": "11-13mmの南洋ゴールデンパールを使用した exquisite 18インチネックレス。每粒が豊かで温かみのある金色とサテンのような光沢を示します。ダイヤモンドアクセント付き18Kゴールド留め具。",
+      "fr": "Un exquis collier de 45 cm de perles dorées de Mer du Sud de 11-13mm. Chaque perle présente une riche couleur dorée chaude avec un lustre satiné. Fermoir en or 18K orné d'un petit diamant."
+    },
+    "specs": {
+      "en": { "Size": "11-13mm", "Length": "18 inches (45cm)", "Clasp": "18K Gold with Diamond", "Type": "South Sea Pearl", "Origin": "Australia/Philippines" },
+      "zh": { "尺寸": "11-13mm", "长度": "18英寸(45cm)", "扣件": "18K金镶钻", "类型": "南洋珍珠", "产地": "澳大利亚/菲律宾" },
+      "ja": { "サイズ": "11-13mm", "長さ": "18インチ(45cm)", "留め具": "18Kゴールド（ダイヤモンド付）", "種類": "南洋真珠", "産地": "オーストラリア/フィリピン" },
+      "fr": { "Taille": "11-13mm", "Longueur": "45 cm", "Fermoir": "Or 18K avec diamant", "Type": "Perle de Mer du Sud", "Origine": "Australie/Philippines" }
+    }
+  },
+  {
+    "id": "ss-002",
+    "slug": "south-sea-white-stud-earrings",
+    "category": "southsea",
+    "images": ["/images/ss-earrings-1.jpg"],
+    "price": 899,
+    "name": {
+      "en": "South Sea White Pearl Stud Earrings",
+      "zh": "南洋白珠耳钉",
+      "ja": "南洋ホワイトパールスタッドピアス",
+      "fr": "Boutons d'Oreilles Perles Blanches Mer du Sud"
+    },
+    "description": {
+      "en": "Luxurious 10-11mm white South Sea pearl studs in 18K white gold settings. These pearls are prized for their incredible size, satin luster, and beautiful silver-white color.",
+      "zh": "奢华的10-11mm南洋白珠耳钉，18K白金镶嵌。这些珍珠以其惊人的尺寸、缎面光泽和美丽的银白色而备受珍视。",
+      "ja": "10-11mmの南洋ホワイトパールを使用したラグジュアリーなスタッドピアス。18Kホワイトゴールド製。これらの真珠は、その驚くべきサイズ、サテンのような光沢、美しいシルバーホワイトの色で珍重されています。",
+      "fr": "Luxueux boutons d'oreilles en perles blanches de Mer du Sud de 10-11mm montés sur or blanc 18K. Ces perles sont prisées pour leur taille incroyable, leur lustre satiné et leur belle couleur blanc-argent."
+    },
+    "specs": {
+      "en": { "Size": "10-11mm", "Setting": "18K White Gold", "Type": "South Sea Pearl", "Origin": "Australia" },
+      "zh": { "尺寸": "10-11mm", "镶嵌": "18K白金", "类型": "南洋珍珠", "产地": "澳大利亚" },
+      "ja": { "サイズ": "10-11mm", "素材": "18Kホワイトゴールド", "種類": "南洋真珠", "産地": "オーストラリア" },
+      "fr": { "Taille": "10-11mm", "Monture": "Or blanc 18K", "Type": "Perle de Mer du Sud", "Origine": "Australie" }
+    }
+  },
+  {
+    "id": "ss-003",
+    "slug": "south-sea-pearl-ring",
+    "category": "southsea",
+    "images": ["/images/ss-ring-1.jpg", "/images/ss-ring-2.jpg"],
+    "price": 1299,
+    "name": {
+      "en": "South Sea Pearl Solitaire Ring",
+      "zh": "南洋珍珠单钻戒指",
+      "ja": "南洋真珠ソリティアリング",
+      "fr": "Bague Solitaire Perle de Mer du Sud"
+    },
+    "description": {
+      "en": "A stunning 12mm golden South Sea pearl set in an 18K gold band with two small diamond accents on each side. The warm golden luster catches light beautifully from every angle.",
+      "zh": "令人惊艳的12mm南洋金珠戒指，18K金戒圈，两侧各镶嵌两颗小钻。温暖的金色光泽从每个角度都美丽地捕捉光线。",
+      "ja": "12mmの南洋ゴールデンパールを18Kゴールドバンドにセットし、両側に2つの小さなダイヤモンドアクセントを配した見事なリング。温かみのある金色の光沢がどの角度からも美しく光を捉えます。",
+      "fr": "Une superbe perle dorée de Mer du Sud de 12mm montée sur un anneau en or 18K avec deux petits diamants de chaque côté. Le lustre doré chaud capte magnifiquement la lumière sous tous les angles."
+    },
+    "specs": {
+      "en": { "Size": "12mm", "Band": "18K Gold", "Accents": "Diamond (0.08ct total)", "Type": "South Sea Pearl", "Origin": "Indonesia" },
+      "zh": { "尺寸": "12mm", "戒圈": "18K金", "点缀": "钻石(共0.08克拉)", "类型": "南洋珍珠", "产地": "印度尼西亚" },
+      "ja": { "サイズ": "12mm", "バンド": "18Kゴールド", "アクセント": "ダイヤモンド(計0.08ct)", "種類": "南洋真珠", "産地": "インドネシア" },
+      "fr": { "Taille": "12mm", "Anneau": "Or 18K", "Accents": "Diamant (0,08ct total)", "Type": "Perle de Mer du Sud", "Origine": "Indonésie" }
+    }
+  }
+]

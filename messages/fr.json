@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Perles",
+    "about": "Notre Histoire",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Les Plus Belles Perles de la Nature",
+    "subtitle": "Perles naturelles sélectionnées à la main des eaux les plus pures du monde",
+    "cta": "Découvrir la Collection"
+  },
+  "home": {
+    "featured": "Perles Vedettes",
+    "story_title": "Un Héritage de Qualité",
+    "story_text": "Depuis des générations, nous sélectionnons les plus belles perles naturelles des eaux vierges du monde entier. Chaque perle raconte une histoire de patience, de nature et de savoir-faire.",
+    "categories": "Nos Collections",
+    "akoya": "Perles Akoya",
+    "freshwater": "Perles d'Eau Douce",
+    "southsea": "Perles de Mer du Sud",
+    "akoya_desc": "Perles Akoya japonaises classiques — lustre radieux, rondeur parfaite",
+    "freshwater_desc": "Perles d'eau douce élégantes de Chine — formes et couleurs variées",
+    "southsea_desc": "Perles de Mer du Sud luxueuses — les plus grandes et les plus prisées"
+  },
+  "products": {
+    "title": "Notre Collection de Perles",
+    "all": "Toutes les Perles",
+    "add_to_cart": "Ajouter au Panier",
+    "details": "Détails",
+    "specs": "Caractéristiques",
+    "price": "Prix",
+    "category": "Catégorie",
+    "related": "Vous Aimerez Aussi",
+    "no_products": "Aucun produit trouvé"
+  },
+  "cart": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "start_shopping": "Commencer vos achats",
+    "quantity": "Quantité",
+    "subtotal": "Sous-total",
+    "total": "Total",
+    "checkout": "Commander",
+    "remove": "Supprimer",
+    "continue": "Continuer vos achats"
+  },
+  "checkout": {
+    "title": "Commande",
+    "email": "Email",
+    "name": "Nom Complet",
+    "address": "Adresse de Livraison",
+    "city": "Ville",
+    "country": "Pays",
+    "phone": "Téléphone",
+    "pay": "Payer",
+    "processing": "Traitement en cours...",
+    "success_title": "Commande Confirmée !",
+    "success_message": "Merci pour votre commande. Vous recevrez un email de confirmation sous peu.",
+    "cancel_title": "Paiement Annulé",
+    "cancel_message": "Votre paiement a été annulé. Vous pouvez réessayer à tout moment."
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "subtitle": "Une passion pour les perles qui traverse les générations",
+    "p1": "Notre aventure a commencé il y a des décennies sur les côtes riches en perles du Japon et de la Chine. Ce qui a commencé comme un commerce familial est devenu une quête mondiale des perles naturelles les plus exceptionnelles.",
+    "p2": "Nous travaillons directement avec les cultivateurs de perles et les plongeurs, garantissant que chaque perle de notre collection est issue de sources éthiques et sélectionnée à la main pour sa beauté unique.",
+    "p3": "Du lustre délicat de l'Akoya à la chaleur dorée des perles de Mer du Sud, chaque pièce de notre collection est un testament à l'art de la nature.",
+    "values_title": "Nos Valeurs",
+    "quality": "Qualité Irréprochable",
+    "quality_desc": "Chaque perle passe par notre processus de sélection rigoureux",
+    "ethical": "Approvisionnement Éthique",
+    "ethical_desc": "Nous travaillons uniquement avec des fermes perlières durables",
+    "craft": "Artisanat d'Expert",
+    "craft_desc": "Chaque pièce est montée à la main par des maîtres artisans"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous serions ravis de vous entendre",
+    "name": "Votre Nom",
+    "email": "Votre Email",
+    "message": "Votre Message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Merci ! Nous vous répondrons bientôt.",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "info": "Ou contactez-nous directement",
+    "email_us": "Nous Écrire",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "newsletter": "Abonnez-vous à notre newsletter"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français"
+  },
+  "notfound": {
+    "title": "Page Non Trouvée",
+    "message": "La page que vous recherchez n'existe pas.",
+    "home": "Retour à l'Accueil"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Pearls",
+    "about": "Our Story",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Nature's Finest Pearls",
+    "subtitle": "Hand-selected natural pearls from the purest waters around the world",
+    "cta": "Explore Collection"
+  },
+  "home": {
+    "featured": "Featured Pearls",
+    "story_title": "A Legacy of Quality",
+    "story_text": "For generations, we have sourced the finest natural pearls from pristine waters across the globe. Each pearl tells a story of patience, nature, and craftsmanship.",
+    "categories": "Our Collections",
+    "akoya": "Akoya Pearls",
+    "freshwater": "Freshwater Pearls",
+    "southsea": "South Sea Pearls",
+    "akoya_desc": "Classic Japanese Akoya pearls — radiant luster, perfect roundness",
+    "freshwater_desc": "Elegant freshwater pearls from China — diverse shapes and colors",
+    "southsea_desc": "Luxurious South Sea pearls — largest and most prized"
+  },
+  "products": {
+    "title": "Our Pearl Collection",
+    "all": "All Pearls",
+    "add_to_cart": "Add to Cart",
+    "details": "Details",
+    "specs": "Specifications",
+    "price": "Price",
+    "category": "Category",
+    "related": "You May Also Like",
+    "no_products": "No products found"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "start_shopping": "Start Shopping",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "continue": "Continue Shopping"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "email": "Email",
+    "name": "Full Name",
+    "address": "Shipping Address",
+    "city": "City",
+    "country": "Country",
+    "phone": "Phone",
+    "pay": "Pay Now",
+    "processing": "Processing...",
+    "success_title": "Order Confirmed!",
+    "success_message": "Thank you for your order. You will receive a confirmation email shortly.",
+    "cancel_title": "Payment Cancelled",
+    "cancel_message": "Your payment was cancelled. You can try again anytime."
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "A passion for pearls that spans generations",
+    "p1": "Our journey began decades ago along the pearl-rich coasts of Japan and China. What started as a family trade has grown into a global pursuit of the most exceptional natural pearls.",
+    "p2": "We work directly with pearl farmers and divers, ensuring every pearl in our collection is ethically sourced and hand-selected for its unique beauty.",
+    "p3": "From the delicate luster of Akoya to the golden warmth of South Sea pearls, each piece in our collection is a testament to nature's artistry.",
+    "values_title": "Our Values",
+    "quality": "Uncompromising Quality",
+    "quality_desc": "Every pearl passes our rigorous selection process",
+    "ethical": "Ethical Sourcing",
+    "ethical_desc": "We partner only with sustainable pearl farms",
+    "craft": "Expert Craftsmanship",
+    "craft_desc": "Each piece is hand-set by master artisans"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! We will get back to you soon.",
+    "error": "Something went wrong. Please try again.",
+    "info": "Or reach us directly",
+    "email_us": "Email Us",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "newsletter": "Subscribe to our newsletter"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français"
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for does not exist.",
+    "home": "Back to Home"
+  }
+}

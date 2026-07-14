@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-pearl: #f5f0eb;
+  --color-pearl-dark: #e8e0d8;
+  --color-gold: #c9a96e;
+  --color-gold-light: #dfc192;
+  --color-ocean: #1a3a4a;
+  --color-ocean-light: #2c5f75;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}

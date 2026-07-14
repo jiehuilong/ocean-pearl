@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "珍珠",
+    "about": "品牌故事",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "大自然的顶级珍珠",
+    "subtitle": "从全球最纯净水域手选天然珍珠",
+    "cta": "浏览系列"
+  },
+  "home": {
+    "featured": "精选珍珠",
+    "story_title": "世代传承的品质",
+    "story_text": "世代以来，我们从全球纯净水域甄选最优质的天然珍珠。每颗珍珠都诉说着耐心、自然与匠心的故事。",
+    "categories": "我们的系列",
+    "akoya": "阿古屋珍珠",
+    "freshwater": "淡水珍珠",
+    "southsea": "南洋珍珠",
+    "akoya_desc": "经典日本阿古屋珍珠 — 光泽璀璨，圆润完美",
+    "freshwater_desc": "优雅中国淡水珍珠 — 形态多样，色彩丰富",
+    "southsea_desc": "奢华南洋珍珠 — 最大最珍贵的品种"
+  },
+  "products": {
+    "title": "珍珠系列",
+    "all": "全部珍珠",
+    "add_to_cart": "加入购物车",
+    "details": "详情",
+    "specs": "规格参数",
+    "price": "价格",
+    "category": "分类",
+    "related": "你可能还喜欢",
+    "no_products": "暂无商品"
+  },
+  "cart": {
+    "title": "购物车",
+    "empty": "购物车是空的",
+    "start_shopping": "去购物",
+    "quantity": "数量",
+    "subtotal": "小计",
+    "total": "合计",
+    "checkout": "去结算",
+    "remove": "删除",
+    "continue": "继续购物"
+  },
+  "checkout": {
+    "title": "结算",
+    "email": "邮箱",
+    "name": "姓名",
+    "address": "收货地址",
+    "city": "城市",
+    "country": "国家",
+    "phone": "电话",
+    "pay": "立即支付",
+    "processing": "处理中...",
+    "success_title": "订单确认！",
+    "success_message": "感谢您的订单。您将很快收到确认邮件。",
+    "cancel_title": "支付已取消",
+    "cancel_message": "您的支付已取消。您可以随时重试。"
+  },
+  "about": {
+    "title": "品牌故事",
+    "subtitle": "跨越世代的热爱",
+    "p1": "我们的旅程始于数十年前的日本和中国珍珠产地。从家族生意起步，现已发展成为对最优质天然珍珠的全球追求。",
+    "p2": "我们与珍珠养殖户和潜水员直接合作，确保系列中的每颗珍珠都经过道德采购和手工甄选。",
+    "p3": "从阿古珍珠的细腻光泽到南洋珍珠的温暖金色，每件作品都彰显大自然的艺术造诣。",
+    "values_title": "我们的价值观",
+    "quality": "品质至上",
+    "quality_desc": "每颗珍珠都经过严格筛选",
+    "ethical": "道德采购",
+    "ethical_desc": "仅与可持续珍珠养殖场合作",
+    "craft": "精湛工艺",
+    "craft_desc": "每件作品由匠人手工打造"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "期待您的垂询",
+    "name": "您的姓名",
+    "email": "您的邮箱",
+    "message": "您的留言",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "success": "感谢您的留言！我们会尽快回复。",
+    "error": "出了点问题，请重试。",
+    "info": "或直接联系我们",
+    "email_us": "发邮件",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "rights": "版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "newsletter": "订阅我们的资讯"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français"
+  },
+  "notfound": {
+    "title": "页面未找到",
+    "message": "您要找的页面不存在。",
+    "home": "返回首页"
+  }
+}
