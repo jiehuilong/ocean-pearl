@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useRouter } from '@/i18n/navigation';
@@ -8,7 +8,8 @@ import { useAuth } from '@/components/auth-context';
 import MultiLangField from '@/components/admin/multi-lang-field';
 import { useToast } from '@/components/admin/toast';
 
-export default function EditProductPage({ params: { id, locale } }) {
+export default function EditProductPage({ params }) {
+  const { id, locale } = use(params);
   const t = useTranslations('admin');
   const router = useRouter();
   const { user, loading: authLoading } = useAuth();

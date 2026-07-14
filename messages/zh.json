@@ -160,6 +160,7 @@
     "price": "价格",
     "compare_at": "对比价",
     "stock": "库存",
-    "category": "分类"
+    "category": "分类",
+    "audit_log": "操作日志"
   }
 }

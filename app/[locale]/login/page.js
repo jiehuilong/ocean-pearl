@@ -49,10 +49,10 @@ export default function LoginPage() {
           {loading ? 'Loading...' : 'Sign In'}
         </button>
       </form>
-      <p className="text-center text-sm text-zinc-500 mt-6">
-        Don't have an account?{' '}
-        <Link href={`/${locale}/register`} className="text-gold hover:underline">Register</Link>
-      </p>
+      <div className="text-center text-sm text-zinc-500 mt-6 space-y-2">
+        <p><Link href={`/${locale}/forgot-password`} className="text-gold hover:underline">Forgot password?</Link></p>
+        <p>Don't have an account?{' '}<Link href={`/${locale}/register`} className="text-gold hover:underline">Register</Link></p>
+      </div>
     </div>
   );
 }

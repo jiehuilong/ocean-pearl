@@ -160,6 +160,7 @@
     "price": "Price",
     "compare_at": "Compare At",
     "stock": "Stock",
-    "category": "Category"
+    "category": "Category",
+    "audit_log": "Audit Log"
   }
 }

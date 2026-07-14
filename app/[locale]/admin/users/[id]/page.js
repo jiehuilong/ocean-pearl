@@ -1,13 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useAuth } from '@/components/auth-context';
 import StatusBadge from '@/components/admin/status-badge';
 import { useToast } from '@/components/admin/toast';
 
-export default function UserDetailPage({ params: { id, locale } }) {
+export default function UserDetailPage({ params }) {
+  const { id, locale } = use(params);
   const t = useTranslations('admin');
   const { user: authUser, loading: authLoading } = useAuth();
   const toast = useToast();

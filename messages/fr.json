@@ -155,7 +155,8 @@
     "price": "Prix",
     "compare_at": "Prix barré",
     "stock": "Stock",
-    "category": "Catégorie"
+    "category": "Catégorie",
+    "audit_log": "Journal d'audit"
   },
   "notfound": {
     "title": "Page Non Trouvée",

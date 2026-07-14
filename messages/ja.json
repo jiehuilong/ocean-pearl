@@ -155,7 +155,8 @@
     "price": "価格",
     "compare_at": "比較価格",
     "stock": "在庫",
-    "category": "カテゴリー"
+    "category": "カテゴリー",
+    "audit_log": "監査ログ"
   },
   "notfound": {
     "title": "ページが見つかりません",

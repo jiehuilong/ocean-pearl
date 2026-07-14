@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useAuth } from '@/components/auth-context';
@@ -9,7 +9,8 @@ import { useToast } from '@/components/admin/toast';
 
 const STATUSES = ['PENDING', 'PAID', 'SHIPPED', 'DELIVERED', 'CANCELLED'];
 
-export default function OrderDetailPage({ params: { id, locale } }) {
+export default function OrderDetailPage({ params }) {
+  const { id, locale } = use(params);
   const t = useTranslations('admin');
   const { user: authUser, loading: authLoading } = useAuth();
   const toast = useToast();

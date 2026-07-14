@@ -36,8 +36,8 @@ export default function Footer() {
         <div className="border-t border-zinc-700 pt-6 text-xs text-zinc-500 flex flex-col sm:flex-row justify-between gap-2">
           <p>© 2024 Ocean Pearl. {t('rights')}</p>
           <div className="flex gap-4">
-            <span>{t('privacy')}</span>
-            <span>{t('terms')}</span>
+            <Link href="/en/privacy" className="hover:text-gold transition-colors">{t('privacy')}</Link>
+            <Link href="/en/terms" className="hover:text-gold transition-colors">{t('terms')}</Link>
           </div>
         </div>
       </div>
