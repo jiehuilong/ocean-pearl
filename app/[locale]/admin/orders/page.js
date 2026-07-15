@@ -41,18 +41,22 @@ export default function AdminOrdersPage() {
   return (
     <div>
       <h1 className="text-2xl font-light text-ocean mb-6">{t('orders')}</h1>
-      <div className="flex flex-wrap gap-2 mb-6">
-        <input type="text" placeholder={t('search_order')} value={search}
-          onChange={e => { setSearch(e.target.value); fetchOrders(e.target.value, statusFilter, 1); }}
-          className="flex-1 sm:flex-none sm:w-64 border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" />
-        <div className="flex gap-1 flex-wrap">
-          {STATUSES.map(s => (
-            <button key={s} onClick={() => { setStatusFilter(s); fetchOrders(search, s, 1); }}
-              className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${statusFilter === s ? 'bg-ocean text-white' : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'}`}>
-              {s || t('all')}
-            </button>
-          ))}
+      <div className="flex justify-between items-start mb-4">
+        <div className="flex flex-wrap gap-2">
+          <input type="text" placeholder={t('search_order')} value={search}
+            onChange={e => { setSearch(e.target.value); fetchOrders(e.target.value, statusFilter, 1); }}
+            className="w-64 border border-zinc-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-gold" />
+          <div className="flex gap-1 flex-wrap">
+            {STATUSES.map(s => (
+              <button key={s} onClick={() => { setStatusFilter(s); fetchOrders(search, s, 1); }}
+                className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${statusFilter === s ? 'bg-ocean text-white' : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'}`}>
+                {s || t('all')}
+              </button>
+            ))}
+          </div>
         </div>
+        <a href="/api/admin/export/orders"
+          className="text-xs bg-zinc-100 px-3 py-1.5 rounded hover:bg-zinc-200 transition-colors whitespace-nowrap">Export CSV</a>
       </div>
 
       {loading ? (

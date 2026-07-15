@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import AddToCartButton from '@/components/add-to-cart-button';
 import ProductCard from '@/components/product-card';
+import ProductReviews from '@/components/product-reviews';
 import { getProduct, getRelatedProducts } from '@/lib/products';
 import { t } from '@/lib/messages';
 
@@ -50,6 +51,7 @@ export default async function ProductDetailPage({ params }) {
           </div>
         </div>
         {related.length > 0 && <div><h2 className="text-xl font-light text-ocean mb-6">{t(locale, 'products.related')}</h2><div className="grid grid-cols-1 sm:grid-cols-3 gap-6">{related.map(p => <ProductCard key={p.slug} product={p} />)}</div></div>}
+        <ProductReviews productSlug={slug} />
       </div>
     </>
   );

@@ -23,6 +23,7 @@ export default function Footer() {
               <li><Link href="/en/products" className="hover:text-gold transition-colors">Pearls</Link></li>
               <li><Link href="/en/about" className="hover:text-gold transition-colors">Our Story</Link></li>
               <li><Link href="/en/contact" className="hover:text-gold transition-colors">Contact</Link></li>
+              <li><Link href="/en/order-tracking" className="hover:text-gold transition-colors">Track Order</Link></li>
             </ul>
           </div>
           <div>

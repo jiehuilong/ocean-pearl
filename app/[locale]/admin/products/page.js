@@ -85,7 +85,10 @@ export default function AdminProductsPage() {
     <div>
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-light text-ocean">{t('products')}</h1>
-        <Link href={`/${locale}/admin/products/new`} className="bg-ocean text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-ocean-light transition-colors">{t('add_product')}</Link>
+        <div className="flex gap-2">
+          <a href="/api/admin/export/products" className="text-xs bg-zinc-100 px-3 py-2 rounded hover:bg-zinc-200 transition-colors">Export CSV</a>
+          <Link href={`/${locale}/admin/products/new`} className="bg-ocean text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-ocean-light transition-colors">{t('add_product')}</Link>
+        </div>
       </div>
       <input type="text" placeholder={t('search_name_slug')} value={search}
         onChange={e => { setSearch(e.target.value); fetchProducts(e.target.value, 1); }}
